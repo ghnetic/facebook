@@ -1,0 +1,79 @@
+nav{
+    background-color: #385898;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #ffffff, #e9f0f5, #c7daec, #c4d3f5, #c7daf7);
+
+}
+.navbar-brand{
+    font-size: 3.1rem;
+    font-weight: 700;
+    line-height: 0.5; 
+    cursor:pointer;
+}
+
+footer{
+    padding:5px;
+    margin-top:5px;
+    background-color:#fcfdfd;
+    text-align: center;
+  }
+
+#button{
+    background-color: #24369b;
+    border-color: #24369b;
+    font-size: 13px;
+    font-weight: 500;
+
+}
+
+#correo_css{
+    color: #ffffff;
+    font-size: 13px;
+}
+
+#contrasena_css{
+    color: #ffffff;
+    font-size: 13px;
+
+}
+
+#olvidaste{
+    color: #b4b4b4;
+    font-size: 13px;
+
+}
+#fecha{
+    color: #888888;
+}
+
+#sexo{
+    color: #888888;
+}
+
+#pronombre_css{
+    font-size: 13px;
+}
+
+#button_registrarse{
+
+    background-color: #1a7a45;
+    border-color: #222422;
+    font-size: 23px;
+    font-weight: 500; 
+    line-height: 1.34;  
+}
+
+#terminos{
+    color: #7a7a7a;
+    font-size: 13px;
+}
+
+#cuenta{
+    
+    color: #575656;
+    font-size: 17px;
+    font-weight: 500;
+}
+

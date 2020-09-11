@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>facebook</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/facebook.css">
+    <script src="js/facebook.js"></script>
+
+</head>
+
+<body>
+    <!--
+    <nav class="navbar navbar-dark navbar-expand-sm">
+        <a href="https://www.facebook.com/" title="Ir a la página de inicio de Facebook" class="navbar-brand ml-5">
+            facebook
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#formulario">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="formulario">
+            <form class="form-inline ml-auto mb-2 mb-sm-0">
+                <input type="text" name="usuario" id="usuario" class="form-control mb-2 mb-sm-0" placeholder="correo o numero de telefono">
+                <input type="password" name="contrasena" id="contrasena" class="form-control ml-sm-2 mb-2 mb-sm-0" placeholder="contraseña">
+                <input type="button" value="Iniciar sesion" class="btn btn-primary ml-sm-2 "> 
+            </form>
+        </div>
+    </nav>
+-->
+    <nav class="navbar navbar-dark navbar-expand-md">
+        <h1>
+
+            <a href="https://www.facebook.com/" title="Ir a la página de inicio de Facebook" class="navbar-brand ml-5">
+                facebook
+            </a>
+
+        </h1>
+        <div class="collapse navbar-collapse" id="formulario">
+            <form class="form-inline ml-auto mb-2 mb-sm-0">
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span for="correo" id="correo_css" class="ml-1">
+                                    Correo electrónico o teléfono
+                                </span>
+                            </td>
+
+                            <td>
+                                <span for="contrasena" id="contrasena_css" class="ml-2">
+                                    Contraseña
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="email" class="form-control mb-2 mb-sm-0" name="correo" id="correo">
+                            </td>
+
+                            <td>
+                                <input type="password" class="form-control ml-sm-2 mb-2 mb-sm-0" name="contrasena"
+                                    id="contrasena">
+                            </td>
+
+                            <td>
+                                <input type="button" name="button" value="Iniciar sesion"
+                                    class="btn btn-primary ml-sm-2 " id="button">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                <div>
+                                    <a href="#" id="olvidaste">
+                                        ¿Olvidaste tu cuenta?
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+            </form>
+            </tbody>
+            </table>
+    </nav>
+
+    <!--D I V I D I R    E N    D O S     C O L U M N A S-->
+    <main class="container mt-4 mb-5">
+        <div class="row">
+
+            <!--P   A    R    T   E          I    Z    Q    U   I   E   R   D    A-->
+            <!--d-none es para ocultar la imagen-->
+            <!--d-md-block es para cuando minizamos a mesdnos de la mitad se quite la imagen-->
+            <div class="col-12 col-md-6 d-none d-md-block">
+                <h4>Facebook te ayuda a comunicarte y compartir<br>
+                    con las personas que forman parte de tu vida</h4>
+
+                <!--I M A G E N   P A G I N A    D E   I N I C I O-->
+                <img class="img-fluid" src="img/7XdR1KwCifL.png">
+            </div>
+
+            <!--P  A   R   T    E         D    E     R     E      C    H    A-->
+            <div class="col-12 col-md-6">
+                <h1>Abre una cuenta</h1>
+                <h3>Es gratis y lo sera siempre</h3>
+                <form class="mt-4">
+                    <div class="form-row">
+
+                        <!--N O M B R E-->
+                        <div class="form-group col-sm-6">
+                            <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre">
+                        </div>
+
+                        <!--A P E L L I D O-->
+                        <div class="form-group col-sm-6">
+                            <input type="text" class="form-control" name="apellido" id="apellido"
+                                placeholder="Apellido">
+                        </div>
+                    </div>
+
+                    <!--C O R R E O-->
+                    <div class="form-group">
+                        <input type="text" name="usuario" id="usuario"
+                            placeholder="Numero de celular o correo electronico" class="form-control">
+                    </div>
+
+                    <!--C O N T R A S E Ñ A-->
+                    <div class="form-group">
+                        <input class="form-control" type="password" name="contrasena-r" id="contrasena-r"
+                            placeholder="Contraseña nueva">
+                    </div>
+
+                    <!--F E C H A    D E    N A C I M I E N T O-->
+                    <fieldset class="form-group">
+                        <h6 class="col-form-label" id="fecha">
+                            Fecha de nacimiento
+                        </h6>
+                        <div class="form-row">
+                            <div class="form-group col-4 col-sm-2">
+                                <select name="dia" id="dia" class="form-control">
+                                    <option disabled selected>dia</option>
+                                    <!--Las opciones se hicieron en js-->
+                                </select>
+                                </select>
+                            </div>
+                            <div class="form-group col-4 col-sm-2">
+                                <select name="mes" id="mes" class="form-control">
+                                    <option disabled selected>mes</option>
+                                     <!--Las opciones se hicieron en js-->   
+                                </select>
+                            </div>
+
+                            <div class="form-group col-4 col-sm-2">
+                                <select name="anio" id="anio" class="form-control">
+                                    <option disabled selected>año</option>
+                                     <!--Las opciones se hicieron en js-->
+                                </select>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!--S E X O-->
+                    <fieldset class="form-group">
+                        <h6 class="col-form-label" id="sexo">Sexo</h6>
+
+                        <!--FEMENINO-->
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="genero" id="genero-f" class="form-check-input">
+                            <h6 for="genero-f" class="form-check.h6">Mujer</h6>
+                        </div>
+
+                        <!--MASCULINO-->
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="genero" id="genero-m" class="form-check-input">
+                            <h6 for="genero-m" class="form-check.h6">Hombre</h6>
+                        </div>
+
+                        <!--PERSONALIZADO-->
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="genero" id="genero-p" class="form-check-input">
+                            <h6 for="genero-p" class="form-check.h6">Personalizado</h6>
+                        </div>
+                    </fieldset>
+
+
+                    <div class="d-none" id="mostrar">
+
+                        <!--P R O N O M B R E-->
+                        <div class="form-group">
+                            <select name="pronombre" id="pronombre" class="form-control">
+                                <option selected disabled>Selecciona tu pronombre</option>
+                                <option value="1">Femenino: "Salúdala por su cumpleaños"</option>
+                                <option value="2">Masculino: "Salúdalo por su cumpleaños"</option>
+                                <option value="3">Neutro: "Salúdalo(a) por su cumpleaños"</option>
+                            </select>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <p class="col-6" id="pronombre_css">
+                                Tu pronombre sera visible para todos.
+                            </p>
+
+                            <!--G E N E R O-->
+                            <input type="text" name="genero" id="genero" class="form-control"
+                                placeholder="Ingresa tu genero(opcional)">
+                        </div>
+                    </div>
+
+                    <div>
+                        <p id="terminos">
+                            Al hacer clic en "Registrarte", aceptas nuestras
+
+                            <a href="https://www.facebook.com/legal/terms/update" class="form-group">
+                                Condiciones
+                            </a>
+                            , la <br>
+                            <a href="https://www.facebook.com/about/privacy/update">
+                                Política de datos
+                            </a>
+
+                            y la
+
+                            <a href="https://www.facebook.com/policies/cookies/">
+                                Política de cookies
+                            </a>
+                            . Es posible que te <br>
+                            enviemos notificaciones por SMS, que puedes desactivar <br>
+                            cuando quieras.
+
+                        </p>
+                    </div>
+
+                    <!--B O T O N   R E G I S T R A R S E-->
+                    <div class="form-row">
+                        <div class="col-6">
+                            <input type="button" value="Registrarte" class="btn btn-success btn-block"
+                                id="button_registrarse">
+                        </div>
+
+                        <!--C R E A R   U N A   C U E N T A-->
+                    </div>
+                    <br>
+
+                    <p id="cuenta">
+
+                        <a href="https://www.facebook.com/pages/creation/">
+                            Crea una página
+                        </a>
+                        para un personaje público, un grupo de música <br>
+                        o un negocio.
+                    </p>
+                    <div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!--P R E    P I E    D E    P A G I N A-->
+    <section id="cajas">
+        <div class="contenedor">
+            <div class="caja mb-2">
+                <h3>Hola Mundo | soy Sofia </h3>
+                <p>
+                    Aqui deberian ir las cosas de cambiarlo de idioma wiri wiri.
+                </p>
+            </div>
+    </section>
+
+    <!--P I E   D E   P A G I N A-->
+    <footer>
+        <p>Facebook &copy; 2019</p>
+    </footer>
+</body>
+
+</html>
