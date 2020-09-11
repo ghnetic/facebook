@@ -1,3 +1,5 @@
 # facebook
 
-Frontend de mi versión de youtube.
+Frontend de mi versión de facebook.
+
+No es responsive.
